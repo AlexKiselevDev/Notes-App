@@ -1,0 +1,34 @@
+{"timestamp":"00:00:01.303","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:02.199","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:02.600","source":"Server","level":"ERROR","message":"(node:9379) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.\nIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.\n\nTo prepare for this change:\n- If you want the current behavior, explicitly use 'sslmode=verify-full'\n- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'\n\nSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.\n(Use `node --trace-warnings ...` to show where the warning was created)"}
+{"timestamp":"00:00:52.326","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:51.100","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
+{"timestamp":"00:02:15.697","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
+{"timestamp":"00:02:49.231","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"00:03:45.014","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
+{"timestamp":"00:03:49.359","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"00:03:53.519","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"00:04:55.928","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
+{"timestamp":"00:06:26.936","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
+{"timestamp":"00:06:53.363","source":"Server","level":"LOG","message":"✓ Compiled in 22ms"}
+{"timestamp":"00:07:11.497","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
+{"timestamp":"00:07:19.532","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
+{"timestamp":"00:07:34.692","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}
+{"timestamp":"00:11:32.054","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
+{"timestamp":"00:11:57.612","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
+{"timestamp":"00:13:27.005","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"00:13:28.692","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:13:54.284","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
+{"timestamp":"00:13:56.852","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:15:57.803","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
+{"timestamp":"00:16:02.688","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:16:37.967","source":"Server","level":"LOG","message":"✓ Compiled in 27ms"}
+{"timestamp":"00:20:24.727","source":"Server","level":"LOG","message":"✓ Compiled in 54ms"}
+{"timestamp":"00:22:26.867","source":"Server","level":"LOG","message":"✓ Compiled in 21ms"}
+{"timestamp":"00:22:39.903","source":"Server","level":"ERROR","message":"⨯ PrismaClientKnownRequestError: \nInvalid `{imported module ./src/lib/prisma.ts}[\"prisma\"].note.delete()` invocation in\n/Users/alex/Desktop/Notes-App/notes-app/.next/dev/server/chunks/[root-of-the-server]__1tasuj3._.js:143:151\n\n  140         status: 400\n  141     });\n  142 }\n→ 143 await {imported module ./src/lib/prisma.ts}[\"prisma\"].note.delete(\nAn operation failed because it depends on one or more records that were required but not found. No record was found for a delete."}
+{"timestamp":"00:22:39.909","source":"Browser","level":"ERROR","message":"DELETE status: 500 \n"}
+{"timestamp":"00:22:39.910","source":"Server","level":"ERROR","message":"[browser] \"DELETE status:\" 500 \"\\n\\u001b[31m\\u001b[39m\""}
+{"timestamp":"00:22:39.910","source":"Browser","level":"ERROR","message":"DELETE response:  \n"}
+{"timestamp":"00:22:39.911","source":"Server","level":"ERROR","message":"[browser] \"DELETE response:\" \"\" \"\\n\\u001b[31m\\u001b[39m\""}
+{"timestamp":"00:22:53.002","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:40:41.319","source":"Server","level":"ERROR","message":"⨯ \"unhandledRejection:\" Error: ENOENT: no such file or directory, scandir '/Users/alex/Desktop/Notes-App/notes-app/src/app'"}
