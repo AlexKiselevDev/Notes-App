@@ -8,5 +8,11 @@
   },
   "devDependencies": {
     "@types/pg": "^8.23.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
