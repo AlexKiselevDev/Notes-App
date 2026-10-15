@@ -19,8 +19,10 @@ jobs:
           node-version: "22"
           cache: "npm"
 
-      - name: Install dependencies
+      - name: Run npm install
         run: npm install
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Build project
         run: npm run build
