@@ -1,34 +1,58 @@
-{"timestamp":"00:00:01.303","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:02.199","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:02.600","source":"Server","level":"ERROR","message":"(node:9379) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.\nIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.\n\nTo prepare for this change:\n- If you want the current behavior, explicitly use 'sslmode=verify-full'\n- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'\n\nSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.\n(Use `node --trace-warnings ...` to show where the warning was created)"}
-{"timestamp":"00:00:52.326","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:51.100","source":"Server","level":"LOG","message":"✓ Compiled in 24ms"}
-{"timestamp":"00:02:15.697","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
-{"timestamp":"00:02:49.231","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
-{"timestamp":"00:03:45.014","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
-{"timestamp":"00:03:49.359","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
-{"timestamp":"00:03:53.519","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
-{"timestamp":"00:04:55.928","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
-{"timestamp":"00:06:26.936","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
-{"timestamp":"00:06:53.363","source":"Server","level":"LOG","message":"✓ Compiled in 22ms"}
-{"timestamp":"00:07:11.497","source":"Server","level":"LOG","message":"✓ Compiled in 19ms"}
-{"timestamp":"00:07:19.532","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
-{"timestamp":"00:07:34.692","source":"Server","level":"LOG","message":"✓ Compiled in 26ms"}
-{"timestamp":"00:11:32.054","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
-{"timestamp":"00:11:57.612","source":"Server","level":"LOG","message":"✓ Compiled in 20ms"}
-{"timestamp":"00:13:27.005","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
-{"timestamp":"00:13:28.692","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:13:54.284","source":"Server","level":"LOG","message":"✓ Compiled in 25ms"}
-{"timestamp":"00:13:56.852","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:15:57.803","source":"Server","level":"LOG","message":"✓ Compiled in 23ms"}
-{"timestamp":"00:16:02.688","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:16:37.967","source":"Server","level":"LOG","message":"✓ Compiled in 27ms"}
-{"timestamp":"00:20:24.727","source":"Server","level":"LOG","message":"✓ Compiled in 54ms"}
-{"timestamp":"00:22:26.867","source":"Server","level":"LOG","message":"✓ Compiled in 21ms"}
-{"timestamp":"00:22:39.903","source":"Server","level":"ERROR","message":"⨯ PrismaClientKnownRequestError: \nInvalid `{imported module ./src/lib/prisma.ts}[\"prisma\"].note.delete()` invocation in\n/Users/alex/Desktop/Notes-App/notes-app/.next/dev/server/chunks/[root-of-the-server]__1tasuj3._.js:143:151\n\n  140         status: 400\n  141     });\n  142 }\n→ 143 await {imported module ./src/lib/prisma.ts}[\"prisma\"].note.delete(\nAn operation failed because it depends on one or more records that were required but not found. No record was found for a delete."}
-{"timestamp":"00:22:39.909","source":"Browser","level":"ERROR","message":"DELETE status: 500 \n"}
-{"timestamp":"00:22:39.910","source":"Server","level":"ERROR","message":"[browser] \"DELETE status:\" 500 \"\\n\\u001b[31m\\u001b[39m\""}
-{"timestamp":"00:22:39.910","source":"Browser","level":"ERROR","message":"DELETE response:  \n"}
-{"timestamp":"00:22:39.911","source":"Server","level":"ERROR","message":"[browser] \"DELETE response:\" \"\" \"\\n\\u001b[31m\\u001b[39m\""}
-{"timestamp":"00:22:53.002","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:40:41.319","source":"Server","level":"ERROR","message":"⨯ \"unhandledRejection:\" Error: ENOENT: no such file or directory, scandir '/Users/alex/Desktop/Notes-App/notes-app/src/app'"}
+{"timestamp":"00:00:00.969","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:06.212","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:06.688","source":"Server","level":"ERROR","message":"(node:29570) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.\nIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.\n\nTo prepare for this change:\n- If you want the current behavior, explicitly use 'sslmode=verify-full'\n- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'\n\nSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.\n(Use `node --trace-warnings ...` to show where the warning was created)"}
+{"timestamp":"00:08:09.487","source":"Server","level":"LOG","message":"✓ Compiled in 133ms"}
+{"timestamp":"00:08:20.683","source":"Server","level":"LOG","message":"✓ Compiled in 42ms"}
+{"timestamp":"00:08:21.875","source":"Browser","level":"ERROR","message":"./src/app/page.tsx:150:28\nError: Expected '</', got '<eof>'\n  148 |       </header>\n  149 |\n> 150 |       <div onClick={(event)\n      |                            ^\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./src/app/page.tsx [Client Component Browser]\n    ./src/app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./src/app/page.tsx [Client Component SSR]\n    ./src/app/page.tsx [Server Component] "}
+{"timestamp":"00:08:21.875","source":"Server","level":"ERROR","message":"[browser] \"./src/app/page.tsx:150:28\\nError: Expected '</', got '<eof>'\\n  148 |       </header>\\n  149 |\\n> 150 |       <div onClick={(event)\\n      |                            ^\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./src/app/page.tsx [Client Component Browser]\\n    ./src/app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./src/app/page.tsx [Client Component SSR]\\n    ./src/app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"00:08:22.821","source":"Browser","level":"ERROR","message":"./src/app/page.tsx:150:28\nError: Expected '</', got '<eof>'\n  148 |       </header>\n  149 |\n> 150 |       <div onClick={(event)\n      |                            ^\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./src/app/page.tsx [Client Component Browser]\n    ./src/app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./src/app/page.tsx [Client Component SSR]\n    ./src/app/page.tsx [Server Component] "}
+{"timestamp":"00:08:22.821","source":"Server","level":"ERROR","message":"[browser] \"./src/app/page.tsx:150:28\\nError: Expected '</', got '<eof>'\\n  148 |       </header>\\n  149 |\\n> 150 |       <div onClick={(event)\\n      |                            ^\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./src/app/page.tsx [Client Component Browser]\\n    ./src/app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./src/app/page.tsx [Client Component SSR]\\n    ./src/app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"00:10:04.905","source":"Server","level":"LOG","message":"✓ Compiled in 75ms"}
+{"timestamp":"00:13:46.359","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:19:22.297","source":"Server","level":"LOG","message":"✓ Compiled in 33ms"}
+{"timestamp":"00:19:26.659","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
+{"timestamp":"00:19:37.768","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
+{"timestamp":"00:21:11.583","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
+{"timestamp":"00:21:45.429","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:21:53.948","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"00:24:31.326","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"00:25:11.758","source":"Server","level":"LOG","message":"✓ Compiled in 29ms"}
+{"timestamp":"00:30:03.536","source":"Server","level":"LOG","message":"✓ Compiled in 64ms"}
+{"timestamp":"00:30:17.912","source":"Server","level":"LOG","message":"✓ Compiled in 46ms"}
+{"timestamp":"00:30:27.449","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"00:30:44.503","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:33:30.436","source":"Server","level":"LOG","message":"✓ Compiled in 43ms"}
+{"timestamp":"00:34:03.829","source":"Server","level":"LOG","message":"✓ Compiled in 35ms"}
+{"timestamp":"00:34:33.620","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"00:34:51.579","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"00:34:55.163","source":"Server","level":"LOG","message":"✓ Compiled in 41ms"}
+{"timestamp":"00:35:04.954","source":"Server","level":"LOG","message":"✓ Compiled in 38ms"}
+{"timestamp":"00:35:10.669","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"00:35:42.398","source":"Server","level":"LOG","message":"✓ Compiled in 46ms"}
+{"timestamp":"00:37:40.112","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
+{"timestamp":"00:38:48.788","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
+{"timestamp":"00:39:45.023","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"00:40:23.128","source":"Server","level":"LOG","message":"✓ Compiled in 95ms"}
+{"timestamp":"00:40:38.741","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"00:42:32.845","source":"Server","level":"LOG","message":"✓ Compiled in 174ms"}
+{"timestamp":"00:42:33.925","source":"Browser","level":"ERROR","message":"Uncaught Error: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX.\n    at <unknown> (src/components/Notes/NoteCard.tsx:14:25)\n    at path (unknown)\n    at NoteCard (src/components/Notes/NoteCard.tsx:130:17)\n    at NotesGrid/<.children< (src/components/Notes/NoteCard.tsx:153:21)\n    at NotesGrid (src/components/Notes/NoteCard.tsx:152:14)\n    at Home (src/app/page.tsx:136:9)\n  \u001b[90m12 |\u001b[0m };\n  \u001b[90m13 |\u001b[0m\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m14 |\u001b[0m \u001b[36mexport\u001b[0m \u001b[36mdefault\u001b[0m \u001b[36mfunction\u001b[0m \u001b[33mNoteCard\u001b[0m({\n  \u001b[90m   |\u001b[0m                         \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m15 |\u001b[0m   content,\n  \u001b[90m16 |\u001b[0m   date,\n  \u001b[90m17 |\u001b[0m   selected = \u001b[36mfalse\u001b[0m,"}
+{"timestamp":"00:42:33.926","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught Error: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX.\\u001b[39m\\n\\u001b[31m    at <unknown> (src/components/Notes/NoteCard.tsx:14:25)\\n    at path (unknown)\\n    at NoteCard (src/components/Notes/NoteCard.tsx:130:17)\\n    at NotesGrid/<.children< (src/components/Notes/NoteCard.tsx:153:21)\\n    at NotesGrid (src/components/Notes/NoteCard.tsx:152:14)\\n    at Home (src/app/page.tsx:136:9)\\u001b[39m\\n  \\u001b[90m12 |\\u001b[0m };\\n  \\u001b[90m13 |\\u001b[0m\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m14 |\\u001b[0m \\u001b[36mexport\\u001b[0m \\u001b[36mdefault\\u001b[0m \\u001b[36mfunction\\u001b[0m \\u001b[33mNoteCard\\u001b[0m({\\n  \\u001b[90m   |\\u001b[0m                         \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m15 |\\u001b[0m   content,\\n  \\u001b[90m16 |\\u001b[0m   date,\\n  \\u001b[90m17 |\\u001b[0m   selected = \\u001b[36mfalse\\u001b[0m,\""}
+{"timestamp":"00:43:33.867","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:43:33.885","source":"Server","level":"LOG","message":"✓ Compiled in 37ms"}
+{"timestamp":"00:43:34.981","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:43:36.229","source":"Browser","level":"ERROR","message":"Invalid DOM property `clip-path`. Did you mean `clipPath`? \n    at onClick (src/components/Notes/NotesGrid.tsx:43:26)\n    at handleStartEditing (src/components/Notes/NoteCard.tsx:70:7)\n  \u001b[90m41 |\u001b[0m           date={note.date}\n  \u001b[90m42 |\u001b[0m           selected={selectedNoteId === note.id}\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m43 |\u001b[0m           onClick={() => onSelect(note.id)}\n  \u001b[90m   |\u001b[0m                          \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m44 |\u001b[0m           onSave={(content) => onSave(note.id, content)}\n  \u001b[90m45 |\u001b[0m           onDelete={() => onDelete(note.id)}\n  \u001b[90m46 |\u001b[0m         /> (src/components/Notes/NotesGrid.tsx:43:26)"}
+{"timestamp":"00:43:36.229","source":"Server","level":"ERROR","message":"[browser] \"Invalid DOM property `clip-path`. Did you mean `clipPath`?\" \"\\n\\u001b[31m    at onClick (src/components/Notes/NotesGrid.tsx:43:26)\\n    at handleStartEditing (src/components/Notes/NoteCard.tsx:70:7)\\u001b[39m\\n  \\u001b[90m41 |\\u001b[0m           date={note.date}\\n  \\u001b[90m42 |\\u001b[0m           selected={selectedNoteId === note.id}\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m43 |\\u001b[0m           onClick={() => onSelect(note.id)}\\n  \\u001b[90m   |\\u001b[0m                          \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m44 |\\u001b[0m           onSave={(content) => onSave(note.id, content)}\\n  \\u001b[90m45 |\\u001b[0m           onDelete={() => onDelete(note.id)}\\n  \\u001b[90m46 |\\u001b[0m         />\" \"\\u001b[2m(src/components/Notes/NotesGrid.tsx:43:26)\\u001b[22m\""}
+{"timestamp":"00:44:20.235","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:44:24.337","source":"Browser","level":"ERROR","message":"Invalid DOM property `clip-path`. Did you mean `clipPath`? \n    at onClick (src/components/Notes/NotesGrid.tsx:43:26)\n    at handleStartEditing (src/components/Notes/NoteCard.tsx:70:7)\n  \u001b[90m41 |\u001b[0m           date={note.date}\n  \u001b[90m42 |\u001b[0m           selected={selectedNoteId === note.id}\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m43 |\u001b[0m           onClick={() => onSelect(note.id)}\n  \u001b[90m   |\u001b[0m                          \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m44 |\u001b[0m           onSave={(content) => onSave(note.id, content)}\n  \u001b[90m45 |\u001b[0m           onDelete={() => onDelete(note.id)}\n  \u001b[90m46 |\u001b[0m         /> (src/components/Notes/NotesGrid.tsx:43:26)"}
+{"timestamp":"00:44:24.338","source":"Server","level":"ERROR","message":"[browser] \"Invalid DOM property `clip-path`. Did you mean `clipPath`?\" \"\\n\\u001b[31m    at onClick (src/components/Notes/NotesGrid.tsx:43:26)\\n    at handleStartEditing (src/components/Notes/NoteCard.tsx:70:7)\\u001b[39m\\n  \\u001b[90m41 |\\u001b[0m           date={note.date}\\n  \\u001b[90m42 |\\u001b[0m           selected={selectedNoteId === note.id}\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m43 |\\u001b[0m           onClick={() => onSelect(note.id)}\\n  \\u001b[90m   |\\u001b[0m                          \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m44 |\\u001b[0m           onSave={(content) => onSave(note.id, content)}\\n  \\u001b[90m45 |\\u001b[0m           onDelete={() => onDelete(note.id)}\\n  \\u001b[90m46 |\\u001b[0m         />\" \"\\u001b[2m(src/components/Notes/NotesGrid.tsx:43:26)\\u001b[22m\""}
+{"timestamp":"00:44:58.316","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"00:45:02.197","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:47:50.445","source":"Server","level":"LOG","message":"✓ Compiled in 33ms"}
+{"timestamp":"00:48:21.278","source":"Server","level":"LOG","message":"✓ Compiled in 49ms"}
+{"timestamp":"00:49:25.101","source":"Server","level":"LOG","message":"✓ Compiled in 43ms"}
+{"timestamp":"01:23:27.013","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:24:55.382","source":"Server","level":"LOG","message":"✓ Compiled in 35ms"}
+{"timestamp":"01:25:42.771","source":"Server","level":"LOG","message":"✓ Compiled in 32ms"}
+{"timestamp":"01:25:54.230","source":"Server","level":"LOG","message":"✓ Compiled in 104ms"}
+{"timestamp":"01:26:07.988","source":"Server","level":"LOG","message":"✓ Compiled in 40ms"}
+{"timestamp":"01:26:28.396","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}

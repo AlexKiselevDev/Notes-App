@@ -24,14 +24,14 @@ export default function CreateNoteForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex min-h-[228px] min-w-[239px] max-w-[239px] flex-col items-start justify-start cursor-pointer overflow-hidden rounded-[24px] border bg-white p-5 text-left shadow-[0px_0px_1px_rgba(0,0,0,0.16),0px_3px_8px_rgba(0,0,0,0.06)] transition-all border-transparent"
+      className="flex min-h-[228px] max-h-[228px] min-w-[239px] max-w-[239px] flex-col items-start justify-start cursor-pointer overflow-hidden rounded-[24px] border bg-white p-5 text-left shadow-[0px_0px_1px_rgba(0,0,0,0.16),0px_3px_8px_rgba(0,0,0,0.06)] transition-all border-transparent"
     >
       <textarea
         value={content}
         onChange={(event) => setContent(event.target.value)}
         autoFocus
         placeholder="Write a note..."
-        className="h-[130px] w-full resize-none bg-transparent text-[15px] leading-[21px] text-gray-900 outline-none placeholder:text-gray-400"
+        className="h-[130px] w-full resize-none bg-transparent line-clamp-8 whitespace-pre-wrap break-words text-[16px] font-medium leading-[24px] tracking-[0.0048em] text-[#262626] outline-none placeholder:text-[#A1A1A1]"
       />
       <div className="w-[100%] mt-4 flex justify-end gap-2">
         <button

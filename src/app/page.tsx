@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import CreateNoteForm from "@/components/Notes/CreateNoteForm";
 import NotesGrid from "@/components/Notes/NotesGrid";
 
 type Note = {
@@ -13,17 +12,12 @@ type Note = {
 export default function Home() {
   const [noteList, setNoteList] = useState<Note[]>([]);
   const [selectedNoteId, setSelectedNoteId] = useState<number | null>(null);
-  const [editingNoteId, setEditingNoteId] = useState<number | null>(null);
   const [isCreating, setIsCreating] = useState(false);
 
   useEffect(() => {
     const loadNotes = async () => {
       const response = await fetch("/api/notes");
-
-      if (!response.ok) {
-        console.error("Failed to load notes");
-        return;
-      }
+      if (!response.ok) return;
 
       const data = await response.json();
 
@@ -49,24 +43,18 @@ export default function Home() {
   const handleCreateNote = async (content: string) => {
     const response = await fetch("/api/notes", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content }),
     });
 
     if (!response.ok) {
-      const errorText = await response.text();
-
-      console.error("POST status:", response.status);
-      console.error("POST response:", errorText);
-
+      console.error("Failed to create note:", await response.text());
       return;
     }
 
     const createdNote = await response.json();
 
-    const newNote = {
+    const newNote: Note = {
       id: createdNote.id,
       content: createdNote.content,
       date: "Just now",
@@ -77,26 +65,15 @@ export default function Home() {
     setIsCreating(false);
   };
 
-  const handleEditNote = (id: number) => {
-    setEditingNoteId(id);
-    setSelectedNoteId(id);
-  };
-
-  const handleSaveNote = async (content: string) => {
-    if (editingNoteId === null) {
-      return;
-    }
-
-    const response = await fetch(`/api/notes/${editingNoteId}`, {
+  const handleSaveNote = async (id: number, content: string) => {
+    const response = await fetch(`/api/notes/${id}`, {
       method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content }),
     });
 
     if (!response.ok) {
-      console.error("Failed to update note");
+      console.error("Failed to update note:", await response.text());
       return;
     }
 
@@ -105,15 +82,10 @@ export default function Home() {
     setNoteList((currentNotes) =>
       currentNotes.map((note) =>
         note.id === updatedNote.id
-          ? {
-              ...note,
-              content: updatedNote.content,
-            }
+          ? { ...note, content: updatedNote.content }
           : note,
       ),
     );
-
-    setEditingNoteId(null);
   };
 
   const handleDeleteNote = async (id: number) => {
@@ -122,11 +94,7 @@ export default function Home() {
     });
 
     if (!response.ok) {
-      const errorText = await response.text();
-
-      console.error("DELETE status:", response.status);
-      console.error("DELETE response:", errorText);
-
+      console.error("Failed to delete note:", await response.text());
       return;
     }
 
@@ -135,32 +103,30 @@ export default function Home() {
     );
 
     setSelectedNoteId(null);
-    setEditingNoteId(null);
   };
 
   return (
     <main
       className="min-h-screen px-10 py-8"
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          setSelectedNoteId(null);
-          setEditingNoteId(null);
-        }
+      onClick={() => {
+        setSelectedNoteId(null);
+        setIsCreating(false);
       }}
     >
       <header className="mb-6 flex items-center justify-between">
-        <h1 className="text-[26px] font-semibold leading-8 text-[#262626]">
+        <h1 className="text-[26px] font-semibold leading-8 text-gray-900">
           Notes
         </h1>
 
         <button
           type="button"
           aria-label="Create note"
-          onClick={() => {
+          onClick={(event) => {
+            event.stopPropagation();
             setIsCreating(true);
-            setEditingNoteId(null);
+            setSelectedNoteId(null);
           }}
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#262626] transition-colors hover:bg-[#404040]"
+          className="flex h-10 w-10 items-center justify-center rounded-full cursor-pointer bg-[#262626] text-2xl font-light leading-none text-white transition-colors hover:bg-[#3D3D3D]"
         >
           <svg
             width="24"
@@ -177,28 +143,18 @@ export default function Home() {
         </button>
       </header>
 
-      {isCreating && (
-        <div className="mb-6">
-          <CreateNoteForm
-            onCreate={handleCreateNote}
-            onCancel={() => setIsCreating(false)}
-          />
-        </div>
-      )}
-
-      <NotesGrid
-        notes={noteList}
-        selectedNoteId={selectedNoteId}
-        editingNoteId={editingNoteId}
-        onSelect={(id) => {
-          setSelectedNoteId(id);
-          setEditingNoteId(null);
-        }}
-        onEdit={handleEditNote}
-        onSave={handleSaveNote}
-        onCancelEdit={() => setEditingNoteId(null)}
-        onDelete={handleDeleteNote}
-      />
+      <div onClick={(event) => event.stopPropagation()}>
+        <NotesGrid
+          notes={noteList}
+          selectedNoteId={selectedNoteId}
+          isCreating={isCreating}
+          onCreate={handleCreateNote}
+          onCancelCreate={() => setIsCreating(false)}
+          onSelect={setSelectedNoteId}
+          onSave={handleSaveNote}
+          onDelete={handleDeleteNote}
+        />
+      </div>
     </main>
   );
 }
